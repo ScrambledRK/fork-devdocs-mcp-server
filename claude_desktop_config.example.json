@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "devdocs": {
+      "command": "node",
+      "args": ["/absolute/path/to/apidocs/build/index.js"]
+    }
+  }
+}

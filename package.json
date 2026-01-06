@@ -1,0 +1,42 @@
+{
+  "name": "devdocs-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for accessing DevDocs.io API documentation",
+  "type": "module",
+  "bin": {
+    "devdocs-mcp-server": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "prepare": "npm run build",
+    "test": "tsc && node build/test.js"
+  },
+  "keywords": [
+    "mcp",
+    "devdocs",
+    "documentation",
+    "api",
+    "model-context-protocol",
+    "claude",
+    "developer-tools"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/USERNAME/devdocs-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/USERNAME/devdocs-mcp-server/issues"
+  },
+  "homepage": "https://github.com/USERNAME/devdocs-mcp-server#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.3"
+  }
+}
