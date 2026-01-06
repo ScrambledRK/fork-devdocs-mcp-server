@@ -25,12 +25,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/USERNAME/devdocs-mcp-server.git"
+    "url": "git+https://github.com/elblanco2/devdocs-mcp-server.git"
   },
   "bugs": {
-    "url": "https://github.com/USERNAME/devdocs-mcp-server/issues"
+    "url": "https://github.com/elblanco2/devdocs-mcp-server/issues"
   },
-  "homepage": "https://github.com/USERNAME/devdocs-mcp-server#readme",
+  "homepage": "https://github.com/elblanco2/devdocs-mcp-server#readme",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.4",
     "node-fetch": "^3.3.2"
