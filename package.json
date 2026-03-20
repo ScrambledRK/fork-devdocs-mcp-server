@@ -10,7 +10,9 @@
     "build": "tsc",
     "watch": "tsc --watch",
     "prepare": "npm run build",
-    "test": "tsc && node build/test.js"
+    "test": "tsc && node build/test.js",
+    "start": "node build/httpServer.js",
+    "start:stdio": "node build/index.js"
   },
   "keywords": [
     "mcp",
