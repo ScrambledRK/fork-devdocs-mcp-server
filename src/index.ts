@@ -15,11 +15,8 @@ async function main() {
     console.error('DevDocs MCP Server running on stdio (TRANSPORT_MODE=stdio)');
   } else {
     // Default: use HTTP transport
-    const { startHttpServer } = await import('./httpServer.js');
-    
     process.env.PORT = process.env.PORT || '3000';
-    
-    startHttpServer();
+    const { startHttpServer } = await import('./httpServer.js');
   }
 }
 
