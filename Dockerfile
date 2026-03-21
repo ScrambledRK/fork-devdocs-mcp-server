@@ -2,18 +2,15 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-COPY package*.json ./
-
-RUN npm ci --only=production
-
-COPY tsconfig.json ./
+COPY package*.json tsconfig.json ./
 COPY src/ ./src/
 
+RUN npm ci
 RUN npm run build
 
-EXPOSE 3000
+EXPOSE 9999
 
-ENV PORT=3000 \
+ENV PORT=9999 \
     NODE_ENV=production
 
 CMD ["node", "build/index.js"]
